@@ -1,0 +1,46 @@
+.intro{
+  background-color: #9b9696;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: 200px auto 300px;
+  grid-template-rows: auto auto auto;
+}
+
+
+.grid-container>div{
+  border:5px solid red;
+  padding: 20px;
+}
+
+/* //start the top left and go down 2  */
+.sidebar-left{
+  display: inline;
+  grid-column:1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.content{
+  display:grid;
+  grid-column:2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.promo{
+grid-column: 3;
+grid-row:2;
+
+}
+
+.related{
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 3;  
+
+}
